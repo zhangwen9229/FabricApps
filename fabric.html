@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>fabric</title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload="draw()">
+    <canvas id="c" width="550" height="550"></canvas>
+    <script src="js/fabric.min.js"></script>
+    <script src="js/fabricApp.js"></script>
+    <!--<script src="js/fa.js"></script>-->
+    <script>
+        function draw() {
+            FabricApp.init({
+                canvas: "c",
+                animateApp: {
+                    name: "CircleShow",
+                    rate: 0.82,
+                    radius: 100
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
